@@ -1,0 +1,264 @@
+# =============================================================================
+# mini-pi — Comprehensive .gitignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.so
+
+# -----------------------------------------------------------------------------
+# Distribution / Packaging
+# -----------------------------------------------------------------------------
+build/
+dist/
+sdist/
+wheels/
+*.egg
+*.egg-info/
+.eggs/
+MANIFEST
+*.whl
+pip-wheel-metadata/
+*.spec
+lib/
+lib64/
+parts/
+var/
+*.tar.gz
+
+# -----------------------------------------------------------------------------
+# Virtual Environments
+# -----------------------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+__pypackages__/
+pythonenv*
+
+# -----------------------------------------------------------------------------
+# Testing
+# -----------------------------------------------------------------------------
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+coverage.json
+htmlcov/
+*.cover
+*.py,cover
+.hypothesis/
+nosetests.xml
+test-results/
+test_results/
+
+# -----------------------------------------------------------------------------
+# Type Checkers
+# -----------------------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+pyrightconfig.json
+
+# -----------------------------------------------------------------------------
+# Linters / Formatters
+# -----------------------------------------------------------------------------
+.ruff_cache/
+.flake8
+.pylintrc.d/
+
+# -----------------------------------------------------------------------------
+# Documentation
+# -----------------------------------------------------------------------------
+docs/_build/
+docs/_autosummary/
+site/
+.mkdocs_cache/
+
+# -----------------------------------------------------------------------------
+# Jupyter Notebooks
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb
+profile_default/
+ipython_config.py
+
+# -----------------------------------------------------------------------------
+# IDEs & Editors
+# -----------------------------------------------------------------------------
+
+# JetBrains (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+\#*\#
+.\#*
+*.elc
+auto-save-list
+tramp
+.\#
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Spyder
+.spyderproject.db
+.spyproject/
+
+# Rope
+.ropeproject/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Nano
+*.save
+
+# -----------------------------------------------------------------------------
+# OS Generated
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# Logs & Diagnostics
+# -----------------------------------------------------------------------------
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------------------------
+# Secrets & Credentials
+# -----------------------------------------------------------------------------
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+.secrets
+secrets/
+credentials.json
+token.json
+*_secret*
+*_credentials*
+
+# -----------------------------------------------------------------------------
+# Project-Specific: mini-pi
+# -----------------------------------------------------------------------------
+
+# Session store (local agent history)
+.mini-pi/
+
+# Session JSONL files
+*.jsonl
+
+# Agent scratch / working files
+.scratch/
+scratch/
+
+# Compiled skills cache
+.skills_cache/
+
+# Extension build artifacts
+extensions/__pycache__/
+
+# Local model config overrides
+local_config.yaml
+local_config.json
+
+# -----------------------------------------------------------------------------
+# Databases
+# -----------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+
+# -----------------------------------------------------------------------------
+# Profiling
+# -----------------------------------------------------------------------------
+*.prof
+*.lprof
+
+# -----------------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------------
+.cache/
+*.bak
+*.orig
+*.tmp
+*.temp
+*.pid
+
